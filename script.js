@@ -59,6 +59,12 @@ function somma(num1, num2) {
 let risultato = somma(12, 20);
 console.log(risultato);
 
+let num1Element = document.getElementById("num1");
+let num2Element = document.getElementById("num2");
+let risultatoElement = document.getElementById("risultato");
+num1Element.innerHTML = 12;
+num2Element.innerHTML = 20;
+risultatoElement.innerHTML = risultato;
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
@@ -66,15 +72,17 @@ console.log(risultato);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let x = 12;
+let xVarElement = document.getElementById("xVar");
+xVarElement.innerHTML = x;
 
 /* ESERCIZIO 5
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let nameElement = document.getElementById("nome");
 let name = "Michelangelo";
-
+nameElement.innerHTML = name;
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
@@ -82,6 +90,8 @@ let name = "Michelangelo";
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let sottrazione = 4 - x;
+let differenzaElement = document.getElementById("differenza");
+differenzaElement.innerHTML = sottrazione;
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -94,11 +104,21 @@ let sottrazione = 4 - x;
 
 let name1 = "jhon";
 let name2 = "Jhon";
+let name1Element = document.getElementById("name1");
+let name2Element = document.getElementById("name2");
+name1Element.innerHTML = name1;
+name2Element.innerHTML = name2;
 
+let consolelog1Element = document.getElementById("consolelog1");
+let consolelog2Element = document.getElementById("consolelog2");
 if (name1 !== name2) {
-  console.log(`${name1} e ${name2} non sono uguali\!`);
+  let consoleResult = `${name1} e ${name2} non sono uguali\!`;
+  console.log(consoleResult);
+  consolelog1Element.innerHTML = consoleResult;
 }
 
 if (name1.toLowerCase === name2.toLowerCase) {
-  console.log(`${name1} e ${name2} sono uguali se usiamo il lowercase\!`);
+  let consoleResult = `${name1} e ${name2} sono uguali se usiamo il lowercase\!`;
+  console.log(consoleResult);
+  consolelog2Element.innerHTML = consoleResult;
 }
