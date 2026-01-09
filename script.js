@@ -99,6 +99,6 @@ if (name1 !== name2) {
   console.log(`${name1} e ${name2} non sono uguali\!`);
 }
 
-if (name1.toLocaleLowerCase === name2.toLocaleLowerCase) {
+if (name1.toLowerCase === name2.toLowerCase) {
   console.log(`${name1} e ${name2} sono uguali se usiamo il lowercase\!`);
 }
